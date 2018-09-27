@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>注册</title>
+
+<script src="js/logon.js"></script>
+
+
+
+<style type="text/css">
+	#input {
+			position:absolute;left:0px; top:30%; width:100%;z-index: 100;
+			}
+	#logo  {
+	position: absolute;
+	left: 0px;
+	top: 17px;
+	width: 100%;
+	z-index: 100;
+		}
+	img {z-index: -1;}
+#logo form h1 {
+	font-style: italic;
+	font-size: 36px;
+	color: #C63;
+}
+</style>
+
+
+</head>
+<body>
+	<img src="images/12.jpg" width="100%" height="100%"/>
+	<div>
+	</div>
+	<div id="logo">
+    <form>
+    <center>
+    <h1>PH250答题网</h1>
+    </center>
+    </form>
+    </div>
+	<div id="input">
+	<center>
+	<form id="form2" action="Logonac" onsubmit="return check()">
+		<table>
+			<tr><td>用户名：</td><td><input type="text" id="n1" name="username"><span id="userInfo"></span></td></tr>
+			<tr><td>密码：</td><td><input type="password" id="pwd1" name="pwd1"><span id="pwd1Info"></span></td></tr>
+			<tr><td>请再次输入密码：</td><td><input type="password" id="pwd2" name="pwd2"><span id="pwd2Info"></span></td></tr>
+			<tr><td><input type="reset" value="重置"></td><td><input type="submit" id="zhuCe" value="注册"></td></tr>
+			<tr><td></td><td><a href="login.html">已有账号，点次登录</a></td></tr>
+			<tr><td></td><td><span id="logonResult"></span></td></tr>
+		</table>
+
+	</form>
+	</center>
+	</div>
+</body>
+</html>
